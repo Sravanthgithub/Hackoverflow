@@ -22,7 +22,7 @@ Y=df.target.values
 from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,random_state=0,test_size=0.2)
 
-
+"""
 st.set_page_config(page_title="HeartCare 🩺",
                    page_icon="🤖",
                    layout="centered",
@@ -31,6 +31,7 @@ st.set_page_config(page_title="HeartCare 🩺",
                        'Get help': "https://github.com/Sravanthgithub/Hackoverflow",
                        'Report a bug': "https://github.com/Sravanthgithub/Hackoverflow/pulls",
                    }))
+                   """
 
 
 def Preprocess_info(age, sex, cp, trestbps, restecg, chol, fbs, thalach, exang, oldpeak, slope, ca, thal):
