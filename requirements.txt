@@ -3,4 +3,4 @@ numpy
 pandas
 matplotlib
 seaborn
-streamlit
+streamlit-1.1.0
