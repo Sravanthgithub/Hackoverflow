@@ -20,16 +20,16 @@ X=df.drop("target",axis=1).values
 Y=df.target.values
 from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,random_state=0,test_size=0.2)
-st.title("HeartCare 🩺")
+#st.title("HeartCare 🩺")
 # st.page_icon("🤖")
-# st.set_page_config(page_title="HeartCare 🩺",
-#                    page_icon="🤖",
-#                    layout="centered",
-#                    initial_sidebar_state="expanded",
-#                    menu_items=({
-#                        'Get help': "https://github.com/Sravanthgithub/Hackoverflow",
-#                        'Report a bug': "https://github.com/Sravanthgithub/Hackoverflow/pulls",
-#                    }))
+st.set_page_config(page_title="HeartCare 🩺",
+                   page_icon="🤖",
+                   layout="centered",
+                   initial_sidebar_state="expanded",
+                   menu_items=({
+                       'Get help': "https://github.com/Sravanthgithub/Hackoverflow",
+                       'Report a bug': "https://github.com/Sravanthgithub/Hackoverflow/pulls",
+                   }))
 
 
 def Preprocess_info(age, sex, cp, trestbps, restecg, chol, fbs, thalach, exang, oldpeak, slope, ca, thal):
@@ -92,13 +92,13 @@ def Preprocess_info(age, sex, cp, trestbps, restecg, chol, fbs, thalach, exang, 
     return prediction
 
 
-# html_temp = """ 
-#     <div style ="background-color:orange;padding:13px;border-radius:8px"> 
-#     <h1 style ="color:black;text-align:center;">HeartCare 🩺</h1> 
-#     </div> 
-#     """
+html_temp = """ 
+    <div style ="background-color:orange;padding:13px;border-radius:8px"> 
+    <h1 style ="color:black;text-align:center;">HeartCare 🩺</h1> 
+    </div> 
+    """
 
-#st.markdown(html_temp, unsafe_allow_html=False)
+st.markdown(html_temp, unsafe_allow_html=True)
 st.subheader("\n")
 #st.subheader('by Sravanth ')
 st.markdown(
@@ -151,4 +151,3 @@ st.success('Done!,Thank you for using this app!')
 
 st.info("Caution: This is just a prediction and not doctoral advice. Kindly see a doctor if you feel the symptoms persist.")
 # %%
-
